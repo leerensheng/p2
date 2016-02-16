@@ -1,30 +1,11 @@
 <?php
 
-  $dictionaryWords = array("guitar", "monument", "bus", "department", "city", "overpass", "communication", "drive", "camoflage", "hostel", "dispense", "countdown", "northwest", "look", "friendship", "reduce", "carefully", "guard", "repel", "vastly");
+  $randomWords = array("guitar", "monument", "bus", "department", "city", "overpass", "communication", "drive", "camoflage", "hostel", "dispense", "countdown", "northwest", "look", "friendship", "reduce", "carefully", "guard", "repel", "vastly");
+  $randomNumbers = array(range(1, 10));
+  $randomSymbols = array("!", "@", "#", "$", "%", "^", "&", "*", "(", ")");
 
-  $howmany = $_GET["numberOfWords"];
-  $howmany = $howmany - 1;
-
-/*  if $useNumber == "on" {
-    echo "We can use numbers";
-  }
-  else {
-    echo "We won't use numbers";
-  }
-
-  if $useSymbol == "on" {
-    echo "We can use symbols";
-  }
-  else {
-    echo "We won't use symbols";
-  }
-*/
-
-##  if $numberOfWords < 10 && $numberOfWords > 3 {
-##    echo "That's good!";
-##  }
-##  else {
-##  echo "Please enter a number between 4 and 10."
-##  }
+  $howManyWords = $_GET["numberOfWords"];
+  $useNumber = $_GET["useNumber"];
+  $useSymbol = $_GET["useSymbol"];
 
 ?>
