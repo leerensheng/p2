@@ -5,12 +5,15 @@
   $randomSymbols = array("!", "@", "#", "$", "%", "^", "&", "*", "(", ")");
 
   $howManyWords = 4;
-#  if ($_GET["numberOfWords"] > 3 && $_GET["numberOfWords"] < 10) {
-#    $howManyWords = $_GET["numberOfWords"];
-#  }
 
-  if(isset($_GET["numberOfWords"]) && $_GET["numberOfWords"] > 3 && $_GET["numberOfWords"] < 10) {
-    $howManyWords = $_GET["numberOfWords"];
+  if(isset($_GET["numberOfWords"])) {
+    if($_GET["numberOfWords"] < 4 || $_GET["numberOfWords"] > 9) {
+      $howManyWords = 4;
+      echo $errorMessage = "Please enter a number between 4 and 9.";
+     }
+    else {
+      $howManyWords = $_GET["numberOfWords"];
+    }
   }
 
   $useNumber = 0;
