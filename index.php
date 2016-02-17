@@ -14,18 +14,23 @@
 		<div class="container">
 			<h1>Matt Lee's Random Password Generator</h1>
 			<form action="index.php" method="GET">
-		    <input type="text" name="numberOfWords">
-			<br>
-			<input type="checkbox" name="useNumber" value="1">Would you like to use numbers?
-			<br>
-			<input type="checkbox" name="useSymbol" value="1">Would you like to use symbols?
-			<br>
-			<input type="submit" value="Generate Password">
-			<br>
-			<?php echo $errorMessage; ?>
-			<?php echo $displayWord . $displayNumber . $displaySymbol; ?>
-			<br>
+				<label>
+			    	How many words would you like in your password (Minimum 4, Maximum 9)?<br>
+					<input type="text" name="numberOfWords">
+				</label>
+				<br>
+				<label>
+					<input type="checkbox" name="useNumber" value="1">Would you like to use numbers?
+				</label>
+				<br>
+				<label>
+					<input type="checkbox" name="useSymbol" value="1">Would you like to use symbols?
+				</label>
+				<br>
+				<input type="submit" value="Generate Password" class="btn btn-primary">
 			</form>
+			<h3 id="error"><?php echo $errorMessage; ?></h3>
+			<h2 id="password"><?php echo $displayWord . $displayNumber . $displaySymbol; ?></h2>
 			<img src="password_strength.png" alt="XKCD password strength comic">
 			<p>The inspration for this project! Image courtesy of <a href="https://xkcd.com/936/">xkcd.com.</a></p>
 		</div>

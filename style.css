@@ -1,8 +1,27 @@
 body {
     text-align: center;
     line-height: 1.5em;
+    background-color: ;
 }
 
 h1 {
     font-family: Georgia;
+    margin-bottom: .5em;
+}
+
+#error {
+    font-style: italic;
+    color: red;
+}
+
+#password {
+    font-weight: bolder;
+    color: #355e3b;
+    font-family: "Courier New", Courier, monospace;
+    margin-bottom: 1em;
+}
+
+label {
+    font-size: 1.25em;
+    margin-bottom: 1.5em;
 }

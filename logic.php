@@ -5,6 +5,7 @@
     $randomSymbols = array("!", "@", "#", "$", "%", "^", "&", "*", "(", ")");
 
     $howManyWords = 4;
+    $errorMessage = "";
 
     if(isset($_GET["numberOfWords"])) {
         if($_GET["numberOfWords"] < 4 || $_GET["numberOfWords"] > 9) {
