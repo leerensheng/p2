@@ -25,4 +25,27 @@
   if(isset($_GET["useSymbol"]) && !empty($_GET["useSymbol"])) {
     $useSymbol = $_GET["useSymbol"];
   }
+
+  $displayWord = "";
+
+  $result = array_rand($randomWords, $howManyWords);
+  for ($i = 0; $i < $howManyWords; $i++) {
+    $randomWord = ucwords($randomWords[$result[$i]]);
+
+    if ($i < $howManyWords - 1) {
+      $displayWord = $displayWord . $randomWord . "-";
+    }
+    else {
+      $displayWord = $displayWord . $randomWord;
+    }
+  }
+
+  if ($useNumber == 1) {
+    $displayNumber = $randomNumbers;
+  }
+
+  if ($useSymbol == 1) {
+    $displaySymbol = $randomSymbols[rand(0,9)];
+  }
+
 ?>
