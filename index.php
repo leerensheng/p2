@@ -11,8 +11,10 @@
 		<?php require "logic.php"; ?>
 	</head>
 	<body>
-		<form action="index.php" method="GET">
-	    <input type="text" name="numberOfWords">
+		<div class="container">
+			<h1>Matt Lee's Random Password Generator</h1>
+			<form action="index.php" method="GET">
+		    <input type="text" name="numberOfWords">
 			<br>
 			<input type="checkbox" name="useNumber" value="1">Would you like to use numbers?
 			<br>
@@ -20,6 +22,7 @@
 			<br>
 			<input type="submit" value="Generate Password">
 			<?php echo $displayWord . $displayNumber . $displaySymbol; ?>
-		</form>
+			</form>
+		</div>
 	</body>
 </html>
