@@ -15,3 +15,4 @@ No additional details.
 ## Outside code
 
 Bootstrap: <http://getbootstrap.com/getting-started/#download>
+XKCD: <https://xkcd.com/936/>

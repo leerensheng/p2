@@ -21,8 +21,13 @@
 			<input type="checkbox" name="useSymbol" value="1">Would you like to use symbols?
 			<br>
 			<input type="submit" value="Generate Password">
+			<br>
+			<?php echo $errorMessage; ?>
 			<?php echo $displayWord . $displayNumber . $displaySymbol; ?>
+			<br>
 			</form>
+			<img src="password_strength.png" alt="XKCD password strength comic">
+			<p>The inspration for this project! Image courtesy of <a href="https://xkcd.com/936/">xkcd.com.</a></p>
 		</div>
 	</body>
 </html>
