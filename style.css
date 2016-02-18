@@ -1,7 +1,7 @@
 body {
     text-align: center;
     line-height: 1.5em;
-    background-color: ;
+    background-color: #DBD9CE;
 }
 
 h1 {
@@ -19,9 +19,15 @@ h1 {
     color: #355e3b;
     font-family: "Courier New", Courier, monospace;
     margin-bottom: 1em;
+    padding: .75em;
+    background-color: yellow;
+    border: 5px dashed #355e3b;
 }
 
 label {
     font-size: 1.25em;
     margin-bottom: 1.5em;
+}
+input[type="text"] {
+    margin-top: .75em;
 }

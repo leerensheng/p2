@@ -20,11 +20,13 @@
 				</label>
 				<br>
 				<label>
-					<input type="checkbox" name="useNumber" value="1">Would you like to use numbers?
+					<input type="checkbox" name="useNumber" value="1">
+					Would you like to add a number?
 				</label>
 				<br>
 				<label>
-					<input type="checkbox" name="useSymbol" value="1">Would you like to use symbols?
+					<input type="checkbox" name="useSymbol" value="1">
+					Would you like to add a symbol?
 				</label>
 				<br>
 				<input type="submit" value="Generate Password" class="btn btn-primary">
