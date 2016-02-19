@@ -10,7 +10,7 @@ This project allows users to generate a random combination of words taken from a
 The [link to my video](https://www.youtube.com/watch?v=7bCRiPK9RBE)
 
 ## Details for teaching team
-No additional details.
+When you validate the HTML, line 33 of the index.php page will have an empty heading warning. That's because the h3 tag doesn't have the error message to style if the user has entered a number between 4 and 9.
 
 ## Outside code
 
