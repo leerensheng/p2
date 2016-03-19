@@ -34,7 +34,7 @@
 			<h3 id="error"><?php echo $errorMessage; ?></h3>
 			<h2 id="password"><?php echo $displayWord . $displayNumber . $displaySymbol; ?></h2>
 			<img src="password_strength.png" alt="XKCD password strength comic">
-			<p>The inspration for this project! Image courtesy of <a href="https://xkcd.com/936/">xkcd.com.</a></p>
+			<p>The inspiration for this project! Image courtesy of <a href="https://xkcd.com/936/">xkcd.com.</a></p>
 		</div>
 	</body>
 </html>
